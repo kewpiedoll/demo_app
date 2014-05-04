@@ -5,7 +5,9 @@ gem 'rails', '4.0.0'
 
 group :development do 
   # Use sqlite3 as the database for Active Record
-  gem 'sqlite3'
+  # since this is a heroku attempt, they recommended pg for everything
+  # https://devcenter.heroku.com/articles/getting-started-with-rails4#local-workstation-setup
+  gem 'pg'
 end
 
 group :production do
@@ -52,3 +54,7 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem 'rails_12factor', group: :production
+
+ruby "2.1.1"
