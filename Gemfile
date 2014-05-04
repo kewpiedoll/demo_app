@@ -7,7 +7,7 @@ group :development do
   # Use sqlite3 as the database for Active Record
   # since this is a heroku attempt, they recommended pg for everything
   # https://devcenter.heroku.com/articles/getting-started-with-rails4#local-workstation-setup
-  gem 'pg'
+  gem 'sqlite3'
 end
 
 group :production do
